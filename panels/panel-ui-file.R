@@ -2,12 +2,13 @@ file = fluidPage(
   sidebarPanel(
     uiOutput("phyloseqDataset"),
     fileInput('filebiom', "Upload .BIOM", multiple = TRUE),
-    fileInput('file1', "Upload .RDdata file"),
-    fileInput('treefile', "Upload .tre", multiple = FALSE)
+    fileInput('treefile', "Upload .tre", multiple = FALSE),
 
     # fileInput("filebiom", "Upload .BIOM", multiple = TRUE),
     fileInput("fileOTU", "Upload OUT file (.txt)", multiple = TRUE),
-    fileInput("filemetadata", "Upload metadata (.txt)", multiple = TRUE)
+    fileInput("filemetadata", "Upload metadata (.txt)", multiple = TRUE),
+    fileInput('file1', "Upload .RDdata file")
+
     # fileInput("filetree", "Upload .tre", multiple = TRUE)
   ),
   
