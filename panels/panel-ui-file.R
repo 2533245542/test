@@ -6,8 +6,8 @@ file = fluidPage(
     fileInput('treefile', "Upload .tre", multiple = FALSE)
 
     # fileInput("filebiom", "Upload .BIOM", multiple = TRUE),
-    # fileInput("fileOTU", "Upload OUT file (.txt)", multiple = TRUE),
-    # fileInput("filemetadata", "Upload metadata (.txt)", multiple = TRUE),
+    fileInput("fileOTU", "Upload OUT file (.txt)", multiple = TRUE),
+    fileInput("filemetadata", "Upload metadata (.txt)", multiple = TRUE),
     # fileInput("filetree", "Upload .tre", multiple = TRUE)
   ),
   
