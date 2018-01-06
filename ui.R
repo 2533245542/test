@@ -1,7 +1,3 @@
-headerTagList = list(
-  tags$style(type="text/css", ".phyloseq-print { font-size: 10px; }"),
-  tags$base(target="_blank")
-)
 
 source("panels/panel-ui-file.R", local = TRUE)
 source("panels/panel-ui-filter.R", local = TRUE)

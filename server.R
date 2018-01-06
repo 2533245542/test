@@ -6,8 +6,8 @@ options(shiny.reactlog=TRUE)
 
 shinyServer(function(input, output){
   source("panels/panel-server-file.R", local = TRUE)
-  # source("panels/panel-server-file.R", local = TRUE)
-  # source("panels/panel-server-file.R", local = TRUE)
-  # source("panels/panel-server-file.R", local = TRUE)
+  source("panels/panel-server-filter.R", local = TRUE)
+  source("panels/panel-server-milineage.R", local = TRUE)
+  source("panels/panel-server-miprofile.R", local = TRUE)
 
 })

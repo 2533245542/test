@@ -1,11 +1,13 @@
 ################################################################################
+
 milineage = fluidPage(
   fluidRow(
     # Sidebar Panel default is 4-column.
     sidebarPanel(
       actionButton("action_milineage", "RUN", icon("filter")),
-      selectInput("milineage_subset_ranks", "SELECT COVA", list("NULL")),
-      selectInput("milineage_subset_taxa", "SELECT CONF",list("NULL")),
+      uiOutput("milineage_out_cova"),
+      uiOutput("milineage_out_conf"),
+      h4("Warning: Do not select identical variables for COVA and CONF"),
       numericInput("milineage_mindepth", "Min depth", 10),
       numericInput("milineage_nresample", "n.resample", 1000),      
       numericInput("milineage_fdralpha", "Fdr.alpha", 0)
